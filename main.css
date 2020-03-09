@@ -1,0 +1,459 @@
+div {
+    text-align: left;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+}
+
+body {
+    background-color: #384B66;
+}
+
+hr {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: solid black 2px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#DLink {
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.HeadText {
+    font-size: 20px;
+}
+
+.smallText {
+    font-size: 12px;
+}
+
+#name {
+    font-size: 30px;
+}
+
+#NickName {
+    font-size: 20px;
+}
+
+#profileInfo {
+    font-size: 15px;
+}
+
+#Grid_Container {
+    display: grid;
+    grid-template-columns: 20% 40% auto;
+    grid-gap: 15px;
+    margin: 1%;
+}
+
+#Header {
+    grid-column: 1/ span 3;
+    display: grid;
+    grid-template-columns: 70% 15% 15%;
+    background-color: #6284B3;
+    border: solid black 2px;
+}
+
+#Head {
+    grid-column: 1/ span 1;
+    font-size: 20px;
+    font-weight: 1000;
+    padding: 1%;
+}
+
+#Home {
+    grid-column: 2/ span 1;
+    text-align: center;
+    border: solid black 1px;
+    padding: 9px;
+    font-size: 20px;
+}
+
+#Project {
+    grid-column: 3/ span 1;
+    text-align: center;
+    border: solid black 1px;
+    padding: 9px;
+    font-size: 20px;
+}
+
+#Profile {
+    grid-column: 1/ span 3;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-gap: 10px;
+    opacity: 0%;
+    animation: PF 2s linear;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes PF {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+#Img {
+    grid-column: 1/ span 1;
+    text-align: center;
+    border: dashed black 5px;
+}
+
+#Me {
+    width: 100%;
+}
+
+#Info {
+    grid-column: 2/ span 1;
+    background-color: #7EA9E6;
+    padding: 2%;
+    margin: auto;
+    box-shadow: black 15px 15px 40px;
+}
+
+#Skill {
+    grid-column: 1/ span 1;
+    padding: 5%;
+    background-color: #C7D5EA;
+    opacity: 0%;
+    animation: SK 1s linear;
+    animation-delay: 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes SK {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+#Education {
+    grid-column: 2/ span 1;
+    padding: 4%;
+    background-color: #C7D5EA;
+    opacity: 0%;
+    animation: ED 1s linear;
+    animation-delay: 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ED {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+#Activities {
+    grid-column: 3/ span 1;
+    padding: 4%;
+    background-color: #C7D5EA;
+    opacity: 0%;
+    animation: AT 1s linear;
+    animation-delay: 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes AT {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+#Contact {
+    grid-column: 1/ span 3;
+    padding: 1%;
+    background-color: #7EA9E6;
+    opacity: 0%;
+    animation: CT 1s linear;
+    animation-delay: 3.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes CT {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+#P1 {
+    grid-column: 1/ span 3;
+    background-color: #7EA9E6;
+    padding: 2%;
+    opacity: 0%;
+    animation: Op 2s linear;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#P2 {
+    grid-column: 1/ span 3;
+    background-color: #C7D5EA;
+    padding: 2%;
+    opacity: 0%;
+    animation: Op 2s linear;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes Op {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+#P2 span {
+    font-size: 30px;
+}
+
+#P1 span {
+    font-size: 30px;
+}
+
+.Pic {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+}
+
+.Pic div {
+    margin: auto;
+    text-align: center;
+}
+
+.Pic img {
+    border: black dashed 5px;
+}
+
+#img1 {
+    grid-column: 1/span 1;
+    width: 80%;
+}
+
+#img2 {
+    grid-column: 2/span 1;
+    width: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+    #name {
+        font-size: 30px;
+    }
+    #NickName {
+        font-size: 20px;
+    }
+    #profileInfo {
+        font-size: 15px;
+    }
+    #Grid_Container {
+        display: grid;
+        grid-template-columns: 30% auto;
+        grid-gap: 10px;
+        margin: 1%;
+    }
+    #Header {
+        grid-column: 1/ span 2;
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: #6284B3;
+        border: solid black 2px;
+    }
+    #Head {
+        grid-column: 1/ span 2;
+        font-size: 30px;
+        font-weight: 1000;
+        padding: 1%;
+    }
+    #Home {
+        grid-column: 1/ span 1;
+        text-align: center;
+        border: solid black 1px;
+    }
+    #Project {
+        grid-column: 2/ span 1;
+        text-align: center;
+        border: solid black 1px;
+    }
+    #Profile {
+        grid-column: 1/ span 2;
+        display: grid;
+        grid-template-columns: 35% auto;
+        grid-gap: 10px;
+    }
+    #Img {
+        grid-column: 1/ span 1;
+        text-align: center;
+        border: dashed black 5px;
+        width: auto;
+    }
+    #Me {
+        width: 100%;
+    }
+    #Info {
+        grid-column: 2/ span 1;
+        background-color: #7EA9E6;
+        padding: 2%;
+    }
+    #Skill {
+        grid-column: 1/ span 1;
+        padding: 5%;
+        background-color: #C7D5EA;
+    }
+    #Education {
+        grid-column: 2/ span 1;
+        padding: 4%;
+        background-color: #C7D5EA;
+    }
+    #Activities {
+        grid-column: 1/ span 2;
+        padding: 4%;
+        background-color: #C7D5EA;
+    }
+    #Contact {
+        grid-column: 1/ span 2;
+        padding: 1%;
+        background-color: #7EA9E6;
+    }
+    #P1 {
+        grid-column: 1/ span 2;
+        background-color: #7EA9E6;
+    }
+    #P2 {
+        grid-column: 1/ span 2;
+        background-color: #C7D5EA;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #name {
+        font-size: 30px;
+    }
+    #NickName {
+        font-size: 20px;
+    }
+    #profileInfo {
+        font-size: 15px;
+    }
+    #Grid_Container {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        margin: 1%;
+    }
+    #Header {
+        grid-column: 1/ span 1;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        background-color: #6284B3;
+        border: solid black 2px;
+    }
+    #Head {
+        grid-column: 1/ span 2;
+        font-size: 30px;
+        font-weight: 1000;
+        padding: 1%;
+    }
+    #Home {
+        grid-column: 1/ span 1;
+        text-align: center;
+        border: solid black 1px;
+    }
+    #Project {
+        grid-column: 2/ span 1;
+        text-align: center;
+        border: solid black 1px;
+    }
+    #Profile {
+        grid-column: 1/ span 1;
+        grid-template-columns: auto;
+    }
+    #Img {
+        grid-column: 1/ span 1;
+        text-align: center;
+        border: dashed black 5px;
+    }
+    #Me {
+        width: 100%;
+    }
+    #Info {
+        grid-column: 1/ span 1;
+        background-color: #7EA9E6;
+        padding: 2%;
+    }
+    #Skill {
+        grid-column: 1/ span 1;
+        padding: 5%;
+        background-color: #C7D5EA;
+    }
+    #Education {
+        grid-column: 1/ span 1;
+        padding: 4%;
+        background-color: #C7D5EA;
+    }
+    #Activities {
+        grid-column: 1/ span 1;
+        padding: 4%;
+        background-color: #C7D5EA;
+    }
+    #Contact {
+        grid-column: 1/ span 1;
+        padding: 1%;
+        background-color: #7EA9E6;
+    }
+    #P1 {
+        grid-column: 1/ span 1;
+        background-color: #7EA9E6;
+    }
+    #P2 {
+        grid-column: 1/ span 1;
+        background-color: #C7D5EA;
+    }
+    .Pic {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+    .Pic img {
+        border: black dashed 5px;
+    }
+    #img1 {
+        grid-column: 1/span 1;
+        width: 80%;
+    }
+    #img2 {
+        grid-column: 2/span 1;
+        width: 80%;
+    }
+}

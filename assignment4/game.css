@@ -1,0 +1,49 @@
+#squares-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#squares-layer {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+    background-color: #C7D5EA;
+}
+
+.square {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 3px solid black;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+body {
+    background-color: #384B66;
+    font-size: 20px;
+}
+
+fieldset {
+    background-color: #7EA9E6;
+}
+
+legend {
+    background-color: #7EA9E6;
+}
+
+#Source {
+    background-color: #7EA9E6;
+}

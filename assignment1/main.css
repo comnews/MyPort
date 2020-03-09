@@ -1,0 +1,201 @@
+.grid-container {
+	display: grid;
+	grid-template-columns: 15% auto auto;
+	grid-gap: 20px;
+	margin: 1%;
+}
+h1{
+	margin: 10px;
+}
+#Home{
+	font-size: 20px;
+}
+hr{
+	border: unset;
+	border-top: 2px solid black;
+}
+.grid-container > div{
+    border: unset;
+}
+body{
+	background-color: lightsteelblue;
+	font-family: "Arial";
+}
+#header{
+	grid-column: 1/span 3;
+	background-color: slateblue;
+	padding: 20px;
+	text-align: center;
+	animation: Header 2s linear ;
+	animation-iteration-count: 1;
+	font-size: 40px;
+	
+}
+@keyframes Header{
+	0% {width: 0%;opacity: 0%;}
+	
+	100% {width: 95%;opacity: 100%;}
+}
+#Pic{
+	grid-column: 1/span 3;
+	text-align: center;
+	
+	animation: Pic 2s linear ;
+	animation-delay: 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes Pic{
+	0%{height: 0%;}
+	100%{height: 100%;background-color: royalblue;}
+}
+
+#Pic img{
+	width: 30%;
+	visibility: hidden;
+	border: 4px dashed black;
+	margin: 20px;
+	animation: img 2s linear ;
+	animation-delay: 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes img{
+	0%{opacity: 0%;visibility: visible;}
+	100%{opacity: 100%;visibility: visible;}
+}
+#main1{
+	grid-column: 1/span 1;
+	visibility: hidden;
+	animation: main 2s linear ;
+	animation-delay: 4s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	background-color: cadetblue;
+	padding: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	
+}
+#main2{
+	grid-column: 2/span 1;
+	visibility: hidden;
+	animation: main 2s linear ;
+	animation-delay: 4s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	background-color: mediumslateblue;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#main2 .PicIn{
+	display: grid;
+	grid-template-columns: auto;
+	text-align: center;
+}
+#main2 img{
+	width: 80%;
+	border: 3px dashed black;
+}
+
+#right{
+	grid-column: 3/span 1;
+	visibility: hidden;
+	animation: main 2s linear ;
+	animation-delay: 4s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	background-color: powderblue;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#right .PicIn2{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	text-align: center;
+}
+
+#right img{
+	width: 80%;
+	border: 3px dashed black;
+}
+
+#footer{
+	grid-column: 1/span 3;
+	visibility: hidden;
+	animation: main 2s linear ;
+	animation-delay: 6s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	background-color: steelblue;
+	padding: 10px;
+}
+@keyframes main{
+	0%{opacity: 0%;visibility: visible;}
+	100%{opacity: 100%;visibility: visible;}
+}
+
+@media only screen and (max-width: 768px) {
+	.grid-container {
+		display: grid;
+		grid-template-columns:20% auto ;
+		grid-gap: 10px;
+		  
+	}
+
+	#header{
+		grid-column: 1/ span 2;
+	}
+	#Pic{
+		grid-column: 1/span 2;
+	}
+	#main1{
+		grid-column: 1/span 1;
+	}
+	#main2{
+		grid-column: 2/span 1;
+	
+	}
+	
+	#right{
+		grid-column: 1/span 2;
+	}	
+
+	#footer{
+		grid-column: 1/span 2;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.grid-container {
+		display: grid;
+		grid-template-columns: auto ;
+		grid-gap: 10px;
+		 
+	}
+	#header{
+		grid-column: 1/span 1;
+	}
+	#Pic{
+		grid-column: 1/span 1;
+	}
+	#main1{
+		grid-column: 1/span 1;
+		text-align: center;
+	}
+	#main2{
+		grid-column: 1/span 1;
+	
+	}
+	
+	#right{
+		grid-column: 1/span 1;
+	}	
+
+	#footer{
+		grid-column: 1/span 1;
+	}
+}

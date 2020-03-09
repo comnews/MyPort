@@ -1,0 +1,15 @@
+body {
+    background-color: #384B66;
+}
+
+hr {
+    border: solid 2px black;
+}
+
+div {
+    background-color: #C7D5EA;
+    height: 5%;
+    font-size: 20px;
+    padding: 1%;
+    border: dashed black 2px;
+}
